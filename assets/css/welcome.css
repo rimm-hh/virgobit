@@ -3,6 +3,9 @@
   width: 100%;
   margin: 0 auto;
   padding: 120px 100px;
+  display: flex;
+  flex-direction: column;
+  
 }
 .container > h1 {
   font-weight: 400;
@@ -38,15 +41,21 @@
   }
 }
 @media (max-width: 501px) {
+  .container {
+    padding-bottom: 160px;
+  }
   .main-text {
     font-size: 3.99vw;
     line-height: 6.38vw;
   }
   .container > h1 {
     margin: 15.96vw 0;
-    font-size: 6.37vw;
+    font-size: 8.7vw;
+    font-weight: 400;
   }
   .main-text > h3 {
-    margin-top: 30px;
+    margin-top: 80px;
+    font-weight: 500;
+    margin-bottom: 20px;
   }
 }
