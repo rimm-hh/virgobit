@@ -12,5 +12,5 @@ window.addEventListener('load', function() {
 
 acceptButton.addEventListener('click', () => {
     localStorage.setItem('Cookie', '1');
-    cookieBack.style.bottom = '-200px';
+    cookieBack.style.bottom = '-500px';
 });
