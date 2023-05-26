@@ -274,7 +274,7 @@ main {
     gap: 65px;
     justify-content: flex-start;
 
-    margin-bottom: 265px;
+    margin-bottom: 160px;
 }
 
 .container-main-3>h1 {
@@ -303,6 +303,14 @@ main {
     text-align: center;
     white-space: nowrap;
     position: sticky;
+}
+
+#scroll-2 ,
+#scroll-3 ,
+#scroll-4 ,
+#scroll-5 {
+    margin-bottom: 105px;
+    visibility: hidden;
 }
 
 /*  */
