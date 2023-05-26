@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+:root {
+    --color-Ellipse-1: #C8AAD3;
+    --color-Ellipse-2: #799DCB;
+    --color-Ellipse-3: #7C38BD;
+    --color-Ellipse-4: #BD6DF2;
+    --color-Ellipse-5: #A696C7;
+}
+
+/* Cookie */
+
+.Cookie-back {
+    width: 100%;
+    background-color: #241477;
+    position: fixed;
+    bottom: 0;
+    /* bottom: -500px; */
+    left: 0;
+    z-index: 1000;
+    border-top: 1px solid white;
+}
+
+.Cookie-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 55px 100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+}
+
+.Cookie-container-left {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.Cookie-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Cookie-Accept {
+    padding: 7px 54px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--color-Ellipse-4);
+}
+.Cookie-Accept:hover {
+    background-color: var(--color-Ellipse-3);
+
+}
+
+.Cookie-Policy {
+    white-space: nowrap;
+    color: var(--color-Ellipse-4);
+    font-size: 18px;
+    font-weight: 500;
+}
+.Cookie-Policy:hover {
+    text-decoration: underline;
+    color: var(--color-Ellipse-3);
+}
+
+@media screen and (max-width:1230px) {
+    .Cookie-container {
+        padding: 4.47vw 8.13vw;
+        gap: 14.63vw;
+    }
+    
+    .Cookie-container-left {
+        font-size: 1.57vw;
+        line-height: 1.95vw;
+    }
+    
+    .Cookie-container-right {
+        gap: 1.62vw;
+    }
+    
+    .Cookie-Accept {
+        padding: 0.56vw 4.39vw;
+        font-size: 1.46vw;
+        border-radius: 0.4;
+    }
+    
+    .Cookie-Policy {
+        font-size: 1.46vw;
+    }
+}
