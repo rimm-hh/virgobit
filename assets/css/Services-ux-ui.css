@@ -122,8 +122,8 @@ main {
     }
 
     40% {
-        top: 45%;
-        right: 35%;
+        top: 44%;
+        right: 34%;
         transform: rotate(0deg);
     }
 
@@ -148,7 +148,7 @@ main {
 
     top: 46%;
     right: 24%;
-    transform: rotate(0);
+    transform: rotate(5deg);
 
     animation-name: hand;
     animation-duration: 5s;
@@ -160,13 +160,13 @@ main {
     0% {
         top: 46%;
         right: 24%;
-        transform: rotate(0);
+        transform: rotate(5deg);
     }
 
     40% {
         top: 46%;
         right: 24%;
-        transform: rotate(0);
+        transform: rotate(5deg);
     }
 
     80% {
