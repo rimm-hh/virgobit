@@ -41,8 +41,8 @@
     top: 0;
     left: 0;
     transform: scale(2);
-    transition: 1s;
-    z-index: -3;
+    transition: 1.5s;
+    z-index: -2;
 }
 
 .container-main-1-img-2 {
@@ -58,8 +58,8 @@
 .container-main-1-img-3 {
     width: 100%;
     position: absolute;
-    top: 25vw;
-    transform: scale(2);
+    top: 55vw;
+    transform: scale(4);
     transition: 1.8s;
     z-index: -1;
 }
@@ -83,10 +83,12 @@
     align-items: center;
 
     position: absolute;
-    top: 26vw;
+    /* top: 26vw; */
+    top: 55vw;
     left: 50%;
     transform: translate(-50%, 0);
     padding: 0 50px;
+    transition: 1.7s;
 }
 
 .container-main-2-left {
