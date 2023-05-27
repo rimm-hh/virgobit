@@ -68,7 +68,10 @@
 
 .container-main-bottom {
     width: 100%;
-    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* 2 */
@@ -125,7 +128,7 @@
 }
 
 .container-main-2-left>a:hover {
-    background-color: var(--color-Ellipse-2);
+    background-color: var(--color-Ellipse-3);
 }
 
 /* 3 */
@@ -312,7 +315,11 @@
 }
 
 /* 4 */
-
+.container-main-4-back {
+    width: 100%;
+    background-color: var(--color-Ellipse-2);
+    margin: 145px auto;
+}
 .container-main-4 {
     width: 100%;
     max-width: 1440px;
@@ -321,9 +328,8 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background-color: var(--color-Ellipse-2);
+    margin: 0 auto;
     padding: 50px 100px;
-    margin: 145px 0;
     border-radius: 5px;
     overflow: hidden;
 }
