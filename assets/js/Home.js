@@ -8,6 +8,7 @@ function adjustPosition() {
   document.querySelector('.container-main-1-img-2').style.transform = 'scale(0.15)';
 
   document.querySelector('.container-main-1-img-3').style.top = '15vw';
+  document.querySelector('.container-main-2').style.top = '26vw';
   document.querySelector('.container-main-1-img-3').style.transform = 'scale(1)';
 }
 
