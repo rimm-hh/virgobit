@@ -20,6 +20,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .container-main-back {
     width: 100%;
     display: flex;
@@ -246,7 +247,7 @@ main {
 .container-main-2>ul {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 25px;
 }
