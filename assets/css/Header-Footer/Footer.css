@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+:root {
+    --color-Ellipse-1: #C8AAD3;
+    --color-Ellipse-2: #799DCB;
+    --color-Ellipse-3: #7C38BD;
+    --color-Ellipse-4: #BD6DF2;
+    --color-Ellipse-5: #A696C7;
+    --color-Ellipse-6: #241477;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: var(--color-Ellipse-6);
+}
+
+.container-footer {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* footer top */
+
+.top-footer {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0;
+    font-size: 14px;
+    margin-top: 90px;
+}
+
+.footer-1-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo-footer {
+    cursor: pointer;
+}
+
+.social-footer {
+    display: flex;
+    column-gap: 13px;
+}
+
+.social-footer a i {
+    color: white;
+}
+
+.linkedin-soc ,
+.email-soc {
+    background-color: var(--color-Ellipse-4);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-Ellipse-4);
+}
+
+.linkedin-soc:hover ,
+.email-soc:hover {
+    background-color: white;
+}
+
+.linkedin-soc:hover i,
+.email-soc:hover i {
+    color: var(--color-Ellipse-4);
+}
+
+.footer-2-sec h3,
+.footer-3-sec h3,
+.footer-4-sec h3 {
+    margin-top: 15px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    cursor: default;
+    color: white;
+}
+
+.footer-2-sec p {
+    padding-bottom: 10px;
+    font-size: 14px;
+    cursor: default;
+}
+.footer-2-sec p a{
+    color: white;
+}
+.footer-3-sec a{
+    
+    font-size: 14px;
+    cursor: default;
+    color: white;
+}
+
+.footer-2-sec p a:hover {
+    text-decoration: underline;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-email-lable {
+    color: white;
+}
+
+.footer-email-input {
+    width: 15.5vmax;
+    height: 40px;
+    border: 1px solid #02191A;
+    border-radius: 5px;
+    margin-top: 4px;
+    padding-left: 10px;
+}
+
+.footer-email-submit {
+    width: 15.5vmax;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid var(--color-Ellipse-4);
+    border-radius: 5px;
+    margin-top: 16px;
+    color: var(--color-Ellipse-4);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer-email-submit:hover {
+    color: var(--color-Ellipse-5);
+    border: 3px solid var(--color-Ellipse-5);
+}
+
+/* footer bottom */
+
+.bottom-footer {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 41px;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.452);
+}
+
+.bottom-footer a{
+    color: white;
+}
+
+@media (max-width:1120px) {
+    .top-footer {
+        padding: 0;
+    }
+}
+
+@media (max-width:800px) {
+    .top-footer {
+        height: auto;
+    }
+
+    .footer-2-sec h3,
+    .footer-3-sec h3,
+    .footer-4-sec h3,
+    .footer-5-sec h3 {
+        font-size: 1.8vw;
+    }
+
+    .footer-2-sec p,
+    .footer-3-sec p,
+    .footer-4-sec p {
+        font-size: 1.4vw;
+    }
+
+    .footer-email-lable {
+        font-size: 1.8vw;
+    }
+
+    .footer-email-input {
+        width: 20vw;
+        height: 5vw;
+        font-size: 1.6vw;
+    }
+
+    .footer-email-submit {
+        width: 20vw;
+        height: 5vw;
+        font-size: 2vw;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:501px) {
+    footer {
+        height: auto;
+    }
+
+    .container-footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* footer top */
+
+    .top-footer {
+        border-top: 1px solid rgba(2, 25, 26, 0.2);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 0 0;
+        margin-top: 30px;
+    }
+
+    .social-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-footer a i {
+        font-size: 20px;
+    }
+
+    .footer-1-sec  {
+        margin-bottom: 80px;
+    }
+
+    .footer-1-sec ,
+    .footer-2-sec ,
+    .footer-3-sec {
+       display: grid;
+       place-items: center;
+    }
+
+    .footer-3-sec {
+        margin-bottom: 80px;
+    }
+
+    .footer-2-sec h3,
+    .footer-3-sec h3,
+    .footer-4-sec h3 {
+        margin-top: 0;
+        padding-bottom: 24px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+
+    .footer-2-sec h3 {
+        padding-top: 28px;
+    }
+
+    .footer-2-sec p,
+    .footer-3-sec p,
+    .footer-4-sec p {
+        padding-bottom: 24px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .footer-5-sec-h3 {
+        display: none;
+    }
+
+    .footer-4-sec {
+        width: 100%;
+        padding: 0 6vw;
+    }
+
+    .footer-form {
+        width: 100%;
+        height: 92px;
+        position: relative;
+        margin-bottom: 28px;
+        padding-right: 0px;
+    }
+
+    .footer-email-input {
+        width: auto;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid var(--color-Ellipse-2);
+        font-size: 18px;
+        color: white;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .footer-email-submit {
+        width: 100%;
+        height: 42px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .linkedin-soc
+    .email-soc {
+        width: 46px;
+        height: 46px;
+    }
+
+    .footer-email-lable{
+        display: none;
+    }
+
+    .footer-5-sec-h3 {
+        display: block;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    /*  */
+
+    .bottom-footer {
+        padding: 0 6.5vw;
+    }
+    
+}
