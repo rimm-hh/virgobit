@@ -71,21 +71,21 @@ const xMark = document.querySelector('.x-mark-menu');
 const headerContainer = document.querySelector('.header-container-mobile-bottom');
 
 barsMenu.addEventListener('click', () => {
-  barsMenu.style.display = 'none';
-  xMark.style.display = 'block';
-  headerContainer.style.left = '0';
+    barsMenu.style.display = 'none';
+    xMark.style.display = 'block';
+    headerContainer.style.left = '0';
 
-  document.querySelector('main').style.display = 'none';
-  document.querySelector('footer').style.display = 'none';
+    document.querySelector('main').style.display = 'none';
+    document.querySelector('footer').style.display = 'none';
 });
 
 xMark.addEventListener('click', () => {
-  xMark.style.display = 'none';
-  barsMenu.style.display = 'block';
-  headerContainer.style.left = '-100%';
+    xMark.style.display = 'none';
+    barsMenu.style.display = 'block';
+    headerContainer.style.left = '-100%';
 
-  document.querySelector('main').style.display = 'flex';
-  document.querySelector('footer').style.display = 'flex';
+    document.querySelector('main').style.display = 'flex';
+    document.querySelector('footer').style.display = 'flex';
 });
 
 // 
@@ -119,14 +119,14 @@ servCaseBtn.addEventListener('click', () => {
         servCase.style.height = '0px';
         servMobile.style.height = '0px';
 
-        
+
         chevronDownMobile1.style.transform = 'rotate(00deg)';
         chevronDownMobile2.style.transform = 'rotate(0deg)';
     } else {
         servCase.style.height = '150px';
         servMobile.style.height = '0px';
 
-        
+
         chevronDownMobile1.style.transform = 'rotate(0deg)';
         chevronDownMobile2.style.transform = 'rotate(180deg)';
     }

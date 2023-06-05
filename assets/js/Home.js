@@ -13,6 +13,20 @@ function adjustPosition() {
   document.querySelector('.container-main-1-img-3').style.transform = 'scale(1)';
 }
 
+window.addEventListener('load', function () {
+  if (window.innerWidth < 501) {
+    document.querySelector('.container-main-3').style.marginTop = '40vw';
+  }
+});
+window.addEventListener('resize', function () {
+  if (window.innerWidth < 501) {
+    document.querySelector('.container-main-3').style.marginTop = '40vw';
+  }
+  else if (window.innerWidth > 501) {
+    document.querySelector('.container-main-3').style.marginTop = '0vw';
+  }
+});
+
 // 
 
 function handleMouseOver(element, box1, box2) {
