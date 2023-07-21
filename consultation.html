@@ -8,9 +8,17 @@
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/Header-Footer/Header.css" />
   <link rel="stylesheet" href="./assets/css/Header-Footer/Footer.css" />
+  <link rel="stylesheet" href="./assets/css/Contact Us/Contact-Us.css">
+
   <link rel="stylesheet" href="./assets/css/consultation.css" />
   <!-- fontawesome cnd -->
   <script src="https://kit.fontawesome.com/2e4a6d166a.js" crossorigin="anonymous"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/fav-icon/Group 9.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/fav-icon/Group 9.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/fav-icon/Group 9.svg">
+  <link rel="manifest" href="./assets/images/fav-icon/Group 9.svg">
+
   <title>Consultation</title>
 </head>
 
@@ -18,11 +26,14 @@
 
   <header class="header"></header>
 
+  <div class="contactUs-back"></div>
+
   <main>
     <div class="container">
       <h1 class="title">Free Consultation</h1>
       <div class="content">
-        <form action="">
+        <form id="contact-form"  action="send_email1.php" method="post">
+
           <div class="content-header">
             <div>
               <label for="name">Name</label><br />
@@ -36,49 +47,33 @@
 
           <label for="email">Email</label><br />
           <input class="input-medium" type="email" id="email" name="email" value="" />
-
-          <br />
+          <br/>
           <label for="number">Phone Number</label><br />
           <input class="input-medium" type="number" id="number" name="number" value="" />
-          <br />
-
-          <div class="service">
-            <span>Service</span>
-            <div class="service-1">
-              <div class="service-content">
-                <img class="service-img" src="./assets/images/Consultation/Union.svg" alt="" />
-                <p class="text-dark">UX / UI Design</p>
-              </div>
-              <div class="service-content">
-                <img class="service-img" src="./assets/images/Consultation/Union2.svg" alt="" />
-                <p class="text-dark">Development</p>
-              </div>
-              <div class="service-content">
-                <img class="service-img" src="./assets/images/Consultation/Union 3.svg" alt="" />
-                <p class="text-dark">Health Data Science</p>
-              </div>
-            </div>
-          </div>
+          <br/>
           <label class="budget-label" for="budget">Budget</label><br />
           <input class="input-medium" type="text" id="budget" name="budget" value="" /><br />
           <label for="project">Project Description</label><br />
           <input class="input-long" type="text" id="project" name="project" value="" />
           <div>
-            <input class="button" type="button" id="button" name="button" value="Send" />
+            <input class="button" type="submit" id="button" name="button" value="Send" />
           </div>
         </form>
+
         <img class="content-img" src="./assets/images/Consultation/Service 24_7-amico 1.svg" alt="" />
       </div>
     </div>
   </main>
 
   <footer class="footer"></footer>
-    
-  <!-- Header Footer TXT -->
+
+  <!-- Header Footer Contact-Us TXT -->
   <script src="./assets/js/Header-Footer/TXT/Header-txt.js"></script>
   <script src="./assets/js/Header-Footer/TXT/Footer-txt.js"></script>
+  <script src="./assets/js/Contact-Us/TXT/Contact-Us-txt.js"></script>
   <!-- Other js -->
   <script src="./assets/js/Header-Footer/Header.js"></script>
+  <script src="./assets/js/Contact-Us/Contact-Us.js"></script>
 
 </body>
 
