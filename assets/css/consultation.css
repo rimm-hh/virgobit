@@ -105,6 +105,10 @@
   background-color: #7C38BD;
 }
 
+input {
+  padding: 0 10px;
+}
+
 @media (max-width: 1350px) {
   .container {
     padding: 16.29vw 7.4vw;

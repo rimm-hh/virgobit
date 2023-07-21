@@ -184,8 +184,8 @@ main {
 }
 
 .container-main-2-box>a:hover {
-    color: var(--color-Ellipse-2);
-    border: 3px solid var(--color-Ellipse-2);
+    color: var(--color-Ellipse-3);
+    border: 3px solid var(--color-Ellipse-3);
 }
 
 .container-main-back-mobile {

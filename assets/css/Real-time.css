@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+:root {
+    --color-Ellipse-1: #C8AAD3;
+    --color-Ellipse-2: #799DCB;
+    --color-Ellipse-3: #7C38BD;
+    --color-Ellipse-4: #BD6DF2;
+    --color-Ellipse-5: #A696C7;
+}
+
+/* main */
+
+.container-main {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* 1 */
+
+.container-main-1-back {
+    width: 100%;
+    background-color: var(--color-Ellipse-2);
+    display: grid;
+    place-items: center;
+}
+
+.container-main-1 {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 100px;
+    padding-top: 104px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-main-1-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-main-1-left>h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.container-main-1-left>p {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.container-main-1-left>ul>h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.container-main-1-left>ul>li {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    list-style: disc;
+
+    margin-left: 25px;
+}
+
+/* 2 */
+
+.container-main-2 {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 100px;
+    padding-top: 100px;
+    padding-bottom: 140px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-main-2>h1 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.container-main-2>p {
+    width: 720px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* 3 */
+
+.container-main-3 {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 100px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.container-main-3-sub {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-main-3-sub>h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-main-3-sub>li {
+    font-size: 16px;
+    font-weight: 400;
+    list-style: disc;
+
+    margin-left: 25px;
+}
+
+/* 4 */
+
+.container-main-4 {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 100px;
+    padding-bottom: 206px;
+}
+
+.container-main-4-mobile {
+    display: none;
+}
+
+.container-main-4-desktop {
+    width: 100%;
+}
+
+@media screen and (max-width:1440px) {
+    /* 1 */
+
+    .container-main-1 {
+        padding: 0 6.94vw;
+        padding-top: 7.22vw;
+        padding-bottom: 3.33vw;
+    }
+
+    .container-main-1-left {
+        gap: 2.08vw;
+    }
+
+    .container-main-1-right {
+        width: 47.63vw;
+    }
+
+    .container-main-1-left>h1 {
+        font-size: 2.22vw;
+    }
+
+    .container-main-1-left>p {
+        font-size: 1.66vw;
+
+        margin-bottom: 1.38vw;
+    }
+
+    .container-main-1-left>ul>h2 {
+        font-size: 1.66vw;
+
+        margin-bottom: 0.69vw;
+    }
+
+    .container-main-1-left>ul>li {
+        font-size: 1.11vw;
+        margin-left: 1.73vw;
+    }
+
+    /* 2 */
+
+    .container-main-2 {
+        padding: 0 6.94vw;
+        padding-top: 6.94vw;
+        padding-bottom: 9.72vw;
+        gap: 1.38vw;
+    }
+
+    .container-main-2>h1 {
+        font-size: 1.38vw;
+    }
+
+    .container-main-2>p {
+        width: 50vw;
+        font-size: 1.11vw;
+    }
+
+    /* 3 */
+
+    .container-main-3 {
+        padding: 0 6.94vw;
+        padding-bottom: 9.72vw;
+        gap: 13.88vw;
+    }
+
+    .container-main-3-sub {
+        width: 33.33vw;
+        gap: 1.38vw;
+    }
+
+    .container-main-3-sub>h1 {
+        font-size: 1.38vw;
+    }
+
+    .container-main-3-sub>li {
+        font-size: 1.11vw;
+        margin-left: 1.73vw;
+    }
+
+    /* 4 */
+
+    .container-main-4 {
+        padding: 0 6.94vw;
+        padding-bottom: 14.03vw;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .container-main {
+        margin-top: 9vw;
+    }
+}
+
+@media screen and (max-width:501px) {
+
+    /* 1 */
+    .container-main-1 {
+        width: 100%;
+        padding: 0 5.98vw;
+        padding-top: 15.9vw;
+        padding-bottom: 8.78vw;
+
+        display: flex;
+        flex-direction: column;
+        gap: 14.97vw;
+    }
+
+    .container-main-1-right {
+        width: 100%;
+    }
+
+    .container-main-1-left {
+        gap: 25px;
+    }
+
+    .container-main-1-left>h1 {
+        font-size: 9.58vw;
+        margin-bottom: 15px;
+    }
+
+    .container-main-1-left>p {
+        font-size: 4.79vw;
+    }
+
+    .container-main-1-left>ul>h2 {
+        font-size: 4.79vw;
+
+        margin-bottom: 10px;
+    }
+
+    .container-main-1-left>ul>li {
+        font-size: 3.19vw;
+
+        margin-left: 4.99vw;
+    }
+
+
+    /* 2 */
+
+    .container-main-2 {
+        padding: 0 5.98vw;
+        padding-top: 9.98vw;
+        padding-bottom: 15.96vw;
+        gap: 3.99vw;
+    }
+
+    .container-main-2>h1 {
+        font-size: 3.99vw;
+    }
+
+    .container-main-2>p {
+        width: 100%;
+        font-size: 3.19vw;
+    }
+
+    /* 3 */
+
+    .container-main-3 {
+        flex-direction: column;
+        padding: 0 5.98vw;
+        padding-bottom: 15.96vw;
+        gap: 15.96vw;
+    }
+
+    .container-main-3-sub {
+        width: 100%;
+        gap: 3.99vw;
+    }
+
+    .container-main-3-sub>h1 {
+        font-size: 3.99vw;
+    }
+
+    .container-main-3-sub>li {
+        font-size: 3.19vw;
+        margin-left: 4.99vw;
+    }
+
+    /* 4 */
+    .container-main-4 {
+        padding-bottom: 31.93vw;
+    }
+    
+    .container-main-4-desktop {
+        display: none;
+    }
+
+    .container-main-4-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .container-main-4-mobile-img-1 {
+        width: 100%;
+    }
+
+    .container-main-4-mobile-img-2 {
+        width: 45.1vw;
+    }
+}

@@ -68,7 +68,7 @@ footer {
     color: white;
 }
 
-.linkedin-soc ,
+.linkedin-soc,
 .email-soc {
     background-color: var(--color-Ellipse-4);
     width: 30px;
@@ -80,7 +80,7 @@ footer {
     border: 2px solid var(--color-Ellipse-4);
 }
 
-.linkedin-soc:hover ,
+.linkedin-soc:hover,
 .email-soc:hover {
     background-color: white;
 }
@@ -105,11 +105,12 @@ footer {
     font-size: 14px;
     cursor: default;
 }
-.footer-2-sec p a{
+
+.footer-2-sec p a {
     color: white;
 }
-.footer-3-sec a{
-    
+
+.footer-3-sec a {
     font-size: 14px;
     cursor: default;
     color: white;
@@ -171,7 +172,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.452);
 }
 
-.bottom-footer a{
+.bottom-footer a {
     color: white;
 }
 
@@ -187,7 +188,7 @@ footer {
     }
 
     .footer-2-sec h3,
-    .footer-3-sec h3,
+    .footer-3-sec a,
     .footer-4-sec h3,
     .footer-5-sec h3 {
         font-size: 1.8vw;
@@ -243,6 +244,12 @@ footer {
         margin-top: 30px;
     }
 
+    .linkedin-soc,
+    .email-soc {
+        width: 40px;
+        height: 40px;
+    }
+
     .social-footer {
         display: flex;
         justify-content: center;
@@ -252,19 +259,28 @@ footer {
         font-size: 20px;
     }
 
-    .footer-1-sec  {
+    .footer-1-sec {
         margin-bottom: 80px;
     }
 
-    .footer-1-sec ,
-    .footer-2-sec ,
+    .footer-1-sec,
+    .footer-2-sec,
     .footer-3-sec {
-       display: grid;
-       place-items: center;
+        display: grid;
+        place-items: center;
+    }
+    .footer-2-sec a {
+        font-size: 20px;
     }
 
     .footer-3-sec {
         margin-bottom: 80px;
+    }
+
+    .footer-3-sec a {
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
     }
 
     .footer-2-sec h3,
@@ -273,7 +289,8 @@ footer {
         margin-top: 0;
         padding-bottom: 24px;
         padding-top: 20px;
-        font-size: 20px;
+        font-weight: 500;
+        font-size: 24px;
     }
 
     .footer-2-sec h3 {
@@ -326,13 +343,12 @@ footer {
         font-size: 16px;
     }
 
-    .linkedin-soc
-    .email-soc {
+    .linkedin-soc .email-soc {
         width: 46px;
         height: 46px;
     }
 
-    .footer-email-lable{
+    .footer-email-lable {
         display: none;
     }
 
@@ -343,11 +359,8 @@ footer {
         font-weight: 500;
         font-size: 24px;
     }
-
     /*  */
-
     .bottom-footer {
         padding: 0 6.5vw;
     }
-    
 }

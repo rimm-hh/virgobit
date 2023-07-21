@@ -57,22 +57,33 @@
     width: 100%;
     padding: 0 100px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
 .container-main-2-left,
 .container-main-2-right {
+    width: 570px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.container-main-2-left:hover,
+.container-main-2-right:hover {
+    transform: scale(1.01);
 }
 
 .container-main-2-left>a>p,
 .container-main-2-right>a>p {
     font-size: 20px;
     font-weight: 400;
+    margin-top: 15px;
 }
+
 
 .container-main-2-bottom {
     display: flex;
@@ -92,7 +103,19 @@
     cursor: default;
 }
 
-@media screen and (max-width:1400px) {
+.Remote,
+.Real-time,
+.Stress {
+    margin-bottom: 120px;
+}
+
+.Remote>a>img,
+.Real-time>a>img,
+.Stress>a>img {
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1410px) {
 
     /* 1 */
     .container-main-1 {
@@ -101,23 +124,55 @@
 
     /* 2 */
     .container-main-2 {
-        padding: 0 7vw;
-        gap: 4vw;
+        padding: 0 6.9vw;
+        gap: 3.5vw;
+    }
+
+    .container-main-2-left,
+    .container-main-2-right {
+        width: 40.42vw;
     }
 
     .container-main-2-left>a>img,
     .container-main-2-right>a>img {
-        width: 42vw;
+        width: 100%;
     }
 
     .container-main-2-left>a>p,
     .container-main-2-right>a>p {
         font-size: 1.4vw;
+        margin-bottom: 1.06vw;
     }
 
     .container-main-2-bottom>p {
         font-size: 1vw;
         padding: 0.8vw 1.3vw;
+    }
+
+    .container-main-2-bottom {
+        margin-bottom: 8.51vw;
+    }
+
+    .Remote,
+    .Real-time,
+    .Stress {
+        margin-bottom: 8.51vw;
+    }
+}
+
+@media screen and (max-width:1075px) {
+    .container-main-2-bottom>p {
+        font-size: 1vw;
+        padding: 0.8vw 1vw;
+    }
+}
+
+@media screen and (max-width:910px) {
+
+    /* 2 */
+    .container-main-2 {
+        padding: 0 6vw;
+        gap: 3vw;
     }
 }
 
@@ -125,6 +180,8 @@
     .container-main {
         margin-top: 11vw;
     }
+
+    /* 1 */
 
     .container-main-1 {
         gap: 50px;
@@ -170,6 +227,7 @@
 
     .container-main-2-left,
     .container-main-2-right {
+        width: auto;
         gap: 12px;
     }
 
@@ -182,12 +240,19 @@
     .container-main-2-right>a>p {
         font-size: 16px;
     }
+
     .container-main-2-bottom {
         margin-bottom: 0;
         row-gap: 10px;
     }
+
     .container-main-2-bottom>p {
         font-size: 2.1vw;
         padding: 1.5vw 2.3vw;
+    }
+
+    .container-main-2-left:hover,
+    .container-main-2-right:hover {
+        transform: scale(1);
     }
 }

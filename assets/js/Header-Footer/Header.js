@@ -15,15 +15,18 @@ window.addEventListener('resize', function () {
             document.querySelector(".header").style.height = "101px";
         }
     }
-    else if (window.innerWidth < 1040) {
+    
+});
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 1300) {
         document.querySelector(".serv-sec").onmouseover = function () {
-            document.querySelector(".header").style.height = "50.2vw";
+            document.querySelector(".header").style.height = "40.61vw";
         }
         document.querySelector(".serv-sec").onmouseout = function () {
             document.querySelector(".header").style.height = "9.5vw";
         }
         document.querySelector(".case-sec").onmouseover = function () {
-            document.querySelector(".header").style.height = "50.2vw";
+            document.querySelector(".header").style.height = "40.61vw";
         }
         document.querySelector(".case-sec").onmouseout = function () {
             document.querySelector(".header").style.height = "9.5vw";

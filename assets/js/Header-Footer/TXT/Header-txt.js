@@ -14,7 +14,6 @@ header.innerHTML = `
     
                 <div class="container-sub-serv-sec">
                     <div class="sub-serv-sec">
-    
                         <ul>
                             <a href="./Services-ux-ui.html">UX / UI Design</a>
     
@@ -24,6 +23,8 @@ header.innerHTML = `
                             <li>UX Research</li>
                             <li>Prototyping</li>
                             <li>Wireframing</li>
+
+                            <a id="Our-Brochure-btn-2" href="./assets/downlaod/New Microsoft PowerPoint Presentation..pdf" >Click here to download our Brochure</a>
                         </ul>
                         <ul>
                             <a href="./Services-develop.html">Development</a>
@@ -33,8 +34,8 @@ header.innerHTML = `
                             <li>Game Development</li>
                             <li>AI Development</li>
                             <li>Full Stack Development</li>
-                            <li>Backend Development</li>
-                            <li>Frontend Development</li>
+                            <!-- <li>Backend Development</li>
+                            <li>Frontend Development</li> -->
                         </ul>
                         <ul>
                             <a href="./Services-health.html">Health Data Science</a>
@@ -83,8 +84,12 @@ header.innerHTML = `
         </ul>
     </div>
     
-    <div class="container-Contact-Us">
-        <a href="#" class="Contact-Us">Contact Us</a>
+    <div class="container-Btns-header">
+
+      <a href="./assets/downlaod/New Microsoft PowerPoint Presentation..pdf" class="Our-Brochure-btn">Our Brochure</a>
+
+      <a href="#" class="Contact-Us">Contact Us</a>
+
     </div>
     
     </div>
@@ -125,7 +130,8 @@ header.innerHTML = `
     
         </ul>
     
-        <a href="#">Contact Us</a>
+        <a href="#" class="Contact-Us-mobile">Contact Us</a>
+        <a id="Our-Brochure-btn-3" href="./assets/downlaod/New Microsoft PowerPoint Presentation..pdf" >Click here to download our Brochure</a>
     </div>
   </div>
 `;

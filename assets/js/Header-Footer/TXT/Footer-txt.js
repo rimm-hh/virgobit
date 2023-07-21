@@ -25,8 +25,14 @@ footer.innerHTML = `
         </div>
         <div class="footer-3-sec">
             <h3>Contact</h3>
-            <a href="#">info@virgobit.com
-            </a>
+            <a href="#">info@virgobit.com</a>
+            <br>
+            <br>
+            <a>VirgoBit UG
+            <br>
+            Mendelstraße 11
+            <br>
+            48149 Münster</a>
         </div>
         <div class="footer-4-sec">
             <h3 class="footer-5-sec-h3">Apply for our newsletter</h3>
